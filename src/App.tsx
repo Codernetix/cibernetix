@@ -1,30 +1,19 @@
-import logo from "./assets/logo.png";
+import Header from "./components/header/Header.tsx";
+import MainContainer from "./components/main/MainContainer.tsx";
+
 import ciberSeguridad from "./assets/ciberseguridad.png";
 import service from "./assets/service.png";
 import www from "./assets/www.png";
 import servidor from "./assets/servidor.png";
+import SectionContainer from "./components/main/SectionContainer.tsx";
+import WorkGalleryCard from "./components/main/WorkGalleryCard.tsx";
 
 function App() {
   return (
     <>
-      <header className="flex justify-between p-4 bg-black text-white items-center">
-        <div className="w-[3vw] h-[3vw] flex items-center justify-evenly">
-          {" "}
-          <img src={logo} alt="Logo" className="w-full" />
-          <p>CIBERNETIX</p>
-        </div>
-        <nav>
-          <ul className="w-[50vw] flex justify-evenly text-3xl">
-            <li>Inicio</li>
-            <li>Sobre nosotros</li>
-            <li>Servicios</li>
-            <li>Contactanos</li>
-          </ul>
-        </nav>
-      </header>
-
-      <main className="mt-2 w-full flex flex-col gap-2 justify-center items-center select-none">
-        <div className="w-[98vw] h-[80vh] bg-[url(./assets/slogan-back3.jpg)] bg-cover flex flex-col justify-center rounded-xl">
+      <Header />
+      <MainContainer>
+        <SectionContainer custom=" h-[100vh] bg-[url(./assets/slogan-back3.jpg)] bg-cover flex flex-col justify-center rounded-xl">
           <div>
             <p className="text-white text-2xl md:text-5xl [text-shadow:_0px_0px_16px_#000] font-bold text-center ">
               Conectamos tu camino digital, ofreciéndote soluciones innovadoras
@@ -45,9 +34,9 @@ function App() {
               <p className=" text-center">Resultados garantizados.</p>
             </div>
           </div>
-        </div>
+        </SectionContainer>
 
-        <div className="w-[98vw] h-[100vh] bg-white rounded-xl p-8">
+        <SectionContainer custom="bg-white rounded-xl p-8">
           <div>
             <div className="text-center">
               <h3 className="text-5xl">Como trabajamos . . .</h3>
@@ -59,53 +48,50 @@ function App() {
             </div>
             <div className="w-full h-full grid grid-cols-3 grid-rows-2 p-8 gap-8">
               {" "}
-              <div  className="flex flex-col items-center p-4">
-                <img src={ciberSeguridad} alt="Ciberseguridad" className="w-[150px]" />
-                <h3>CIBERSEGURIDAD</h3>
-                <p>
-                  Protegemos la información y sistemas de tu empresa con
+              <WorkGalleryCard
+                imagen={ciberSeguridad}
+                imgdesc={"Ciberseguridad"}
+                titulo={"Ciberseguridad"}
+                descripcion={`Protegemos la información y sistemas de tu empresa con
                   soluciones integrales de ciberseguridad, incluyendo
                   auditorías, análisis de vulnerabilidades, firewalls,
                   protección contra malware y formación en seguridad.
                   Garantizamos la protección de tus datos en un entorno digital
-                  cada vez más desafiante.
-                </p>
-              </div>
-              <div className="flex flex-col items-center p-4">
-                <img src={service} alt="TELEFONIA IP" className="w-[150px]"/>
-                <h3>TELEFONIA IP</h3>
-                <p>
-                  Mejoramos la comunicación de tu empresa con soluciones VoIP.
+                  cada vez más desafiante.`}
+              />
+              <WorkGalleryCard
+                imagen={service}
+                imgdesc={"TELEFONIA IP"}
+                titulo={"TELEFONIA IP"}
+                descripcion={`Mejoramos la comunicación de tu empresa con soluciones VoIP.
                   Ofrecemos instalación, configuración y mantenimiento para
                   optimizar costos, mejorar la eficiencia y potenciar la
-                  productividad.
-                </p>
-              </div>{" "}
-              <div className="flex flex-col items-center p-4">
-                <img src={www} alt="DESARROLLO WEB" className="w-[150px]" />
-                <h3>DESARROLLO WEB</h3>
-                <p>
-                  Creamos páginas web personalizadas que se ajustan a tu
+                  productividad.`}
+              />
+              <WorkGalleryCard
+                imagen={www}
+                imgdesc={"DESARROLLO WEB"}
+                titulo={"DESARROLLO WEB"}
+                descripcion={`Creamos páginas web personalizadas que se ajustan a tu
                   negocio, desde sitios informativos hasta tiendas en línea.
                   Ofrecemos diseño responsive, integración de pagos, SEO y
                   mantenimiento, asegurando una presencia digital atractiva y
-                  funcional.
-                </p>
-              </div>{" "}
-              <div className="flex flex-col items-center p-4">
-                <img src={servidor} alt="SERVIDORES" className="w-[150px]"/>
-                <h3>SERVIDORES</h3>
-                <p>
-                  Ofrecemos servidores dedicados, virtualizados o en la nube
+                  funcional.`}
+              />
+              <WorkGalleryCard
+                imagen={servidor}
+                imgdesc={"SERVIDORES"}
+                titulo={"SERVIDORES"}
+                descripcion={`Ofrecemos servidores dedicados, virtualizados o en la nube
                   según las necesidades de tu empresa. Gestionamos su
                   instalación, configuración y mantenimiento, garantizando alto
-                  rendimiento, seguridad y escalabilidad para tu crecimiento.
-                </p>
-              </div>
+                  rendimiento, seguridad y escalabilidad para tu crecimiento.`}
+                gridPosition={"col-start-2"}
+              />
             </div>
           </div>
-        </div>
-      </main>
+        </SectionContainer>
+      </MainContainer>
     </>
   );
 }
