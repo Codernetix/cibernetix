@@ -1,12 +1,7 @@
 import Header from "./components/header/Header.tsx";
-import MainContainer from "./components/main/MainContainer.tsx";
-
-import ciberSeguridad from "./assets/ciberseguridad.png";
-import service from "./assets/service.png";
-import www from "./assets/www.png";
-import servidor from "./assets/servidor.png";
-import SectionContainer from "./components/main/SectionContainer.tsx";
-import WorkGalleryCard from "./components/main/WorkGalleryCard.tsx";
+import MainContainer from "./components/main/components/MainContainer.tsx";
+import SectionContainer from "./components/main/components/SectionContainer.tsx";
+import WorkGallery from "./components/main/WorkGallery.tsx";
 
 function App() {
   return (
@@ -46,48 +41,29 @@ function App() {
                 específicas de cada cliente.
               </p>
             </div>
-            <div className="w-full h-full grid grid-cols-3 grid-rows-2 p-8 gap-8">
-              {" "}
-              <WorkGalleryCard
-                imagen={ciberSeguridad}
-                imgdesc={"Ciberseguridad"}
-                titulo={"Ciberseguridad"}
-                descripcion={`Protegemos la información y sistemas de tu empresa con
-                  soluciones integrales de ciberseguridad, incluyendo
-                  auditorías, análisis de vulnerabilidades, firewalls,
-                  protección contra malware y formación en seguridad.
-                  Garantizamos la protección de tus datos en un entorno digital
-                  cada vez más desafiante.`}
-              />
-              <WorkGalleryCard
-                imagen={service}
-                imgdesc={"TELEFONIA IP"}
-                titulo={"TELEFONIA IP"}
-                descripcion={`Mejoramos la comunicación de tu empresa con soluciones VoIP.
-                  Ofrecemos instalación, configuración y mantenimiento para
-                  optimizar costos, mejorar la eficiencia y potenciar la
-                  productividad.`}
-              />
-              <WorkGalleryCard
-                imagen={www}
-                imgdesc={"DESARROLLO WEB"}
-                titulo={"DESARROLLO WEB"}
-                descripcion={`Creamos páginas web personalizadas que se ajustan a tu
-                  negocio, desde sitios informativos hasta tiendas en línea.
-                  Ofrecemos diseño responsive, integración de pagos, SEO y
-                  mantenimiento, asegurando una presencia digital atractiva y
-                  funcional.`}
-              />
-              <WorkGalleryCard
-                imagen={servidor}
-                imgdesc={"SERVIDORES"}
-                titulo={"SERVIDORES"}
-                descripcion={`Ofrecemos servidores dedicados, virtualizados o en la nube
-                  según las necesidades de tu empresa. Gestionamos su
-                  instalación, configuración y mantenimiento, garantizando alto
-                  rendimiento, seguridad y escalabilidad para tu crecimiento.`}
-                gridPosition={"col-start-2"}
-              />
+            <WorkGallery />
+          </div>
+        </SectionContainer>
+
+        <SectionContainer custom="bg-white rounded-xl p-8">
+          <div className="text-center">
+            <h3 className="text-5xl">Contactanos</h3>
+            <br />
+            <p className="text-2xl">
+              Dejanos tus datos y te llamamos, o contactanos por medio de Whatsapp
+            </p>
+
+            <div className="flex justify-center mt-10">
+              <form className="grid grid-cols-2 gap-4 text-start text-top px-10">
+                <label htmlFor="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" className="border-2 border-amber-300" placeholder="Ingresa tu nombre"/>
+                <label htmlFor="email">Correo electronico</label>
+                <input type="email" name="email" id="email" className="border-2 border-amber-300  w-[300px]" placeholder="Ingresa tu direccion de email"/>
+                <label htmlFor="solicitud">Solicitud</label>
+                <input type="text" name="solicitud" id="solicitud" className="border-2 border-amber-300 h-30 text-clip" maxLength={300} placeholder="Ingresa los detalles de tu solicitud"/>
+
+                <input type="button" value="Enviar"  className="col-span-2 bg-amber-300"/>
+              </form>
             </div>
           </div>
         </SectionContainer>
