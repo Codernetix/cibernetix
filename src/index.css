@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-body{
-    background-image: url(./assets/circuit-board.svg);
-    background-size: 100px 100px;
+body {
+  background-image: url(./assets/circuit-board.svg);
+  background-size: 100px 100px;
+  overflow-x: hidden;
 }

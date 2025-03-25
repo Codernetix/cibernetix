@@ -58,9 +58,9 @@ function App() {
                 <label htmlFor="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" className="border-2 border-amber-300" placeholder="Ingresa tu nombre"/>
                 <label htmlFor="email">Correo electronico</label>
-                <input type="email" name="email" id="email" className="border-2 border-amber-300  w-[300px]" placeholder="Ingresa tu direccion de email"/>
+                <input type="email" name="email" id="email" className="border-2 border-amber-300" placeholder="Ingresa tu direccion de email"/>
                 <label htmlFor="solicitud">Solicitud</label>
-                <input type="text" name="solicitud" id="solicitud" className="border-2 border-amber-300 h-30 text-clip" maxLength={300} placeholder="Ingresa los detalles de tu solicitud"/>
+                <input type="text" name="solicitud" id="solicitud" className="border-2 border-amber-3001 h-30 text-clip" maxLength={300} placeholder="Ingresa los detalles de tu solicitud"/>
 
                 <input type="button" value="Enviar"  className="col-span-2 bg-amber-300"/>
               </form>
