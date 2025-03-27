@@ -19,7 +19,7 @@ export default function Header() {
           &lt;/&gt;
         </button>
         <ul
-          className={`w-[50vw] absolute md:relative top-[10vh] md:top-0 left-0 transition-all duration-1000 bg-black  -translate-x-full ${
+          className={`w-[55vw] absolute md:relative top-[10vh] md:top-0 left-0 transition-all duration-1000 bg-black  -translate-x-full md:translate-0 ${
             isToggle
               ? "translate-x-0"
               : ""

@@ -47,7 +47,7 @@ export default function WorkGallery() {
                   según las necesidades de tu empresa. Gestionamos su
                   instalación, configuración y mantenimiento, garantizando alto
                   rendimiento, seguridad y escalabilidad para tu crecimiento.`}
-        gridPosition={"col-start-2"}
+        gridPosition={"md:col-start-2"}
       />
     </GridGallery>
   );
