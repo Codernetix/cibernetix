@@ -35,13 +35,13 @@ function App() {
             </p>
 
             <div className="flex justify-center mt-10">
-              <form className="grid grid-cols-2 gap-4 text-start text-top px-10">
+              <form className="grid md:grid-cols-2 gap-4 text-start text-top px-10">
                 <label htmlFor="nombre">Nombre</label>
                 <input
                   type="text"
                   name="nombre"
                   id="nombre"
-                  className="border-2 border-amber-300"
+                  className="border-2 border-amber-300 p-2"
                   placeholder="Ingresa tu nombre"
                 />
                 <label htmlFor="email">Correo electronico</label>
@@ -49,7 +49,7 @@ function App() {
                   type="email"
                   name="email"
                   id="email"
-                  className="border-2 border-amber-300"
+                  className="border-2 border-amber-300 p-2"
                   placeholder="Ingresa tu direccion de email"
                 />
                 <label htmlFor="solicitud">Solicitud</label>
@@ -57,7 +57,7 @@ function App() {
                   type="text"
                   name="solicitud"
                   id="solicitud"
-                  className="border-2 border-amber-3001 h-30 text-clip"
+                  className="border-2 border-amber-3001 h-30 p-2 overflow-x-clip"
                   maxLength={300}
                   placeholder="Ingresa los detalles de tu solicitud"
                 />
@@ -65,7 +65,7 @@ function App() {
                 <input
                   type="button"
                   value="Enviar"
-                  className="col-span-2 bg-amber-300"
+                  className="md:col-span-2 bg-amber-300"
                 />
               </form>
             </div>
