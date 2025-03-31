@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import logo from "../../assets/logo.png";
+import NavLink from "./components/NavLink";
 
 export default function Header() {
   const [isToggle, setToggle] = useState(false);
@@ -26,10 +27,10 @@ export default function Header() {
             isToggle ? "translate-x-0" : ""
           }  flex flex-col md:flex-row gap-4 justify-evenly text-3xl p-8 md:p-0`}
         >
-          <li>Inicio</li>
-          <li>Sobre nosotros</li>
-          <li>Servicios</li>
-          <li>Contactanos</li>
+          <NavLink setToggle={setToggle} link="#">Inicio</NavLink>
+          <NavLink setToggle={setToggle} link="#">Sobre Nosotros</NavLink>
+          <NavLink setToggle={setToggle} link="#">Servicios</NavLink>
+          <NavLink setToggle={setToggle} link="#">Contactanos</NavLink>
         </ul>
       </nav>
     </header>
