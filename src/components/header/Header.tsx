@@ -7,7 +7,7 @@ export default function Header() {
   const [isToggle, setToggle] = useState(false);
 
   return (
-    <header className="h-[10vh] flex justify-between p-4 bg-black text-white items-center">
+    <header className="sticky top-0 h-[10vh] flex justify-between p-4 bg-black text-white items-center">
       <div className="flex items-center justify-evenly">
         {" "}
         <img src={logo} alt="Logo" className="w-[75px]" />

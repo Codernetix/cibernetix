@@ -5,10 +5,10 @@ import swordshield from "../../assets/swordshield.png";
 export default function MisionVision() {
   return (
     <SectionContainer custom="bg-gradient-to-bl from-orange-200 to-cyan-100 p-8 grid md:grid-cols-2 gap-4">
-      <div className="md:col-start-2">
+      <div className="md:col-start-2 md:row-start-1">
         <img src={fenix} alt="" className="w-[300px] mx-auto"/>
       </div>
-      <div className="grid gap-8 md:col-start-1">
+      <div className="grid gap-8 md:col-start-1 md:row-start-1">
         <h2 className="text-center font-bold text-3xl">MISIÓN.</h2>
         <p className="text-2xl">
           Proveer soluciones innovadoras y seguras en infraestructura
@@ -19,10 +19,10 @@ export default function MisionVision() {
           entorno digital eficiente, confiable y seguro.
         </p>
       </div>
-      <div className="md:col-start-2">
-        <img src={swordshield} alt="" className="w-[300px] md:mx-auto"/>
+      <div className="md:col-start-1 md:row-start-2">
+        <img src={swordshield} alt="" className="w-[300px] mx-auto"/>
       </div>
-      <div className="grid gap-8 md:w-[450px] md:col-start-1">
+      <div className="grid gap-8 md:col-start-2 md:row-start-2">
         <h2 className="text-center font-bold text-3xl">VISIÓN.</h2>
         <p className="text-2xl">
           Ser una empresa reconocida por nuestra capacidad de innovar,

@@ -4,11 +4,10 @@ export default function ContactForm() {
   return (
     <SectionContainer custom="bg-white rounded-xl p-8">
       <div className="text-center">
-        <h3 className="text-5xl">Contactanos</h3>
-        <br />
-        <p className="text-2xl">
-          Dejanos tus datos y te llamamos, o contactanos por medio de Whatsapp
-        </p>
+        <h3 className="text-3xl">
+          ¿ Tienes un proyecto en mente ? <br /> Contáctanos y hagámoslo
+          realidad.
+        </h3>
 
         <div className="flex justify-center mt-10">
           <form className="grid md:grid-cols-2 gap-4 text-start text-top px-10">
