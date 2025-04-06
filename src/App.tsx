@@ -27,10 +27,10 @@ function App() {
           </div>
         </SectionContainer>
 
-      <MisionVision />
+        <MisionVision />
 
-      <ContactForm />
-      
+        <ContactForm />
+
       </MainContainer>
     </>
   );
