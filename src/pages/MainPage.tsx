@@ -4,7 +4,6 @@ import ContactForm from "../components/main/ContactForm.tsx";
 import MisionVision from "../components/main/MisionVision.tsx";
 import Slogan from "../components/main/Slogan.tsx";
 import WorkGallery from "../components/main/WorkGallery.tsx";
-import WhatsAppBtn from "../components/WhatsAppBtn.tsx";
 
 export default function MainPage (){
     return (
@@ -30,7 +29,6 @@ export default function MainPage (){
           <MisionVision />
   
           <ContactForm />
-          <WhatsAppBtn />
   
         </MainContainer>
       </>
