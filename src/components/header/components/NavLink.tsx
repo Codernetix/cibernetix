@@ -4,12 +4,15 @@ interface Props {
   children: React.ReactNode;
 }
 
+import { Link } from "react-router-dom";
+
+
 export default function NavLink({ setToggle, link, children }: Props) {
   return (
     <li>
-      <a href={link} onClick={() => setToggle(false)}>
+      <Link to={link} onClick={() => setToggle(false)}>
         {children}
-      </a>
+      </Link>
     </li>
   );
 }

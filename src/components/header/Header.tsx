@@ -27,8 +27,8 @@ export default function Header() {
             isToggle ? "translate-x-0" : ""
           }  flex flex-col md:flex-row gap-4 justify-evenly text-3xl p-8 md:p-0`}
         >
-          <NavLink setToggle={setToggle} link="#">Inicio</NavLink>
-          <NavLink setToggle={setToggle} link="#">Sobre Nosotros</NavLink>
+          <NavLink setToggle={setToggle} link="/">Inicio</NavLink>
+          <NavLink setToggle={setToggle} link="/about">Sobre Nosotros</NavLink>
           <NavLink setToggle={setToggle} link="#">Servicios</NavLink>
           <NavLink setToggle={setToggle} link="#">Contactanos</NavLink>
         </ul>
