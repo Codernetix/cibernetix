@@ -29,8 +29,8 @@ export default function Header() {
         >
           <NavLink setToggle={setToggle} link="/">Inicio</NavLink>
           <NavLink setToggle={setToggle} link="/about">Sobre Nosotros</NavLink>
-          <NavLink setToggle={setToggle} link="#">Servicios</NavLink>
-          <NavLink setToggle={setToggle} link="#">Contactanos</NavLink>
+          <NavLink setToggle={setToggle} link="/services">Servicios</NavLink>
+          <NavLink setToggle={setToggle} link="/contact">Contactanos</NavLink>
         </ul>
       </nav>
     </header>
